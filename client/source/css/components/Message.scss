@@ -1,0 +1,15 @@
+.message{
+  border-top: 1px #eee solid;
+  padding: .5rem 0;
+
+  &__user{
+    color: #999;
+    font-weight: 600;
+    font-size: .8rem;
+    margin-bottom: .3rem;
+  }
+
+  &__text{
+    color: #555;
+  }
+}

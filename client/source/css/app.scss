@@ -1,0 +1,24 @@
+@import "./components/Auth";
+@import "./components/Chat";
+@import "./components/Message";
+
+
+html{
+  height: 100%;
+  font: 14px Arial;
+}
+
+body{
+  background-image: radial-gradient(#06B9A8, #026F62);
+  background-color: #026F62;
+  background-attachment: fixed;
+  height: 100%;
+  margin: 0;
+}
+
+#app{
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+

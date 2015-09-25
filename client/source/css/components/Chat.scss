@@ -1,0 +1,78 @@
+.chat{
+  max-width: 600px;
+  margin: auto;
+  box-sizing: border-box;
+  background-color: white;
+  background-clip: content-box;
+  box-shadow: 0 0 5px 2px rgba(#333,.5);
+
+  &__toolbar{
+    position: fixed;
+    display: table;
+    top: 0;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    height: 3rem;
+    background-color: #026F62;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    color: white;
+    box-shadow: 0 2px 5px 0px rgba(#333,.5);
+    &>span{
+      display: table-cell;
+      width: 50%;
+      vertical-align: middle;
+      &:nth-child(1){
+        text-align: left;
+      }
+      &:nth-child(2){
+        text-align: right;
+      }
+    }
+  }
+
+  &__messages{
+    padding: 4rem 2rem 6rem;
+  }
+
+  &__input{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    height: 5rem;
+    background-color: white;
+    padding: 1rem 1rem 0;
+    box-sizing: border-box;
+    color: white;
+    box-shadow: 0 -2px 5px 0px rgba(#333,.5);
+
+    input{
+      width: 100%;
+      outline: none;
+      border: 1px #06B9A8 solid;
+      background-color: transparent;
+      padding: .5rem;
+      margin: .3rem 0;
+      box-sizing: border-box;
+      border-radius: 3px;
+      color: #666;
+      transition: border-color .3s ease;
+      &::placeholder {
+        font-style:italic;
+        color: #999;
+        font-weight:100;
+      }
+      &:focus{
+        border-color: #026F62;
+      }
+    }
+  }
+
+  &__errors{
+    color: #888;
+    font-size: .7rem;
+  }
+}

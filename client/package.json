@@ -1,0 +1,38 @@
+{
+  "name": "apiway_react_client_example",
+  "version": "0.0.1",
+  "description": "Apiway+React client example",
+  "scripts": {
+    "start":            "gulp --watching",
+    "server":           "gulp --watching",
+    "build":            "gulp build --no-watching",
+    "build-production": "gulp build --no-watching --production"
+  },
+  "author": "Denis Churbanov",
+  "license": "MIT",
+  "devDependencies": {
+    "babelify": "^6.2.0",
+    "browserify": "^11.0.1",
+    "del": "^1.2.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-babel": "^5.2.1",
+    "gulp-connect": "^2.2.0",
+    "gulp-if": "^1.2.5",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^1.4.0",
+    "gulp-util": "^3.0.6",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.3.1",
+    "yargs": "^3.22.2"
+  },
+  "dependencies": {
+    "react": "^0.13.3",
+    "react-router": "^0.13.3",
+    "js.cookie": ">0.0.1",
+    "apiway": ">0.0.2"
+  }
+}
