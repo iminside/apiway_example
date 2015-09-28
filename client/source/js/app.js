@@ -17,7 +17,7 @@ let routes = (
 
 
 Api
-  .connect( `ws://${ window.location.hostname }:3000`, { aliveDelay: 5000 } )
+  .connect( `ws://localhost:3000`, { aliveDelay: 5000 } )
   .beforeReadyPromise( function(){
 
     return Api.query( "Users.auth_by_token", { token: Cookie.get( "token" ) } );

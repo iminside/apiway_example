@@ -15,7 +15,7 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     addressable (2.3.8)
-    apiway (0.0.4)
+    apiway (0.0.6)
       rake (~> 10.3)
       sinatra (~> 1.4)
       sinatra-activerecord (~> 2.0)
