@@ -1,14 +1,14 @@
 Apiway server example
 
 
-Run
+**Run**
 
 ```sh
-bundle install
+$ bundle install
 ```
 ```sh
-bundle exec rake db:migrate
+$ bundle exec rake db:migrate
 ```
 ```sh
-apiway server
+$ apiway server
 ```

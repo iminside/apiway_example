@@ -1,31 +1,31 @@
 Apiway client & server example
 
 
-Run server
+**Run server**
 
 ```sh
-cd server
+$ cd server
 ```
 ```sh
-bundle install
+$ bundle install
 ```
 ```sh
-bundle exec rake db:migrate
+$ bundle exec rake db:migrate
 ```
 ```sh
-apiway server
+$ apiway server
 ```
 
-Run client
+**Run client**
 
 ```sh
-cd client
+$ cd client
 ```
 ```sh
-npm install
+$ npm install
 ```
 ```sh
-npm start
+$ npm start
 ```
 
 Open `http://localhost:8080` in your browser

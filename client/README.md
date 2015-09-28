@@ -1,10 +1,12 @@
 Apiway+React client example
 
-Run
+**Run**
 
 ```sh
-npm install
+$ npm install
 ```
 ```sh
-npm start
+$ npm start
 ```
+
+Open `http://localhost:8080` in your browser
