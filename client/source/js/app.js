@@ -1,19 +1,7 @@
 import React   from "react";
-import Router  from "react-router";
 import { Api } from "apiway";
 import Cookie  from "js.cookie";
-import Secure  from "./components/Secure.jsx";
-import Chat    from "./components/Chat.jsx";
-
-
-let { Route } = Router;
-
-
-let routes = (
-  <Route   path="/" handler={ Secure } >
-    <Route path="/" handler={ Chat } />
-  </Route>
-);
+import App     from "./components/App.jsx";
 
 
 Api
@@ -25,8 +13,6 @@ Api
   })
   .oneReady( function( e ){
 
-    Router.run( routes, function( Handler ){
-      React.render( <Handler />, document.getElementById( "app" ) );
-    });
+    React.render( <App />, document.getElementById( "app" ) );
 
   });

@@ -31,7 +31,6 @@
   },
   "dependencies": {
     "react": "^0.13.3",
-    "react-router": "^0.13.3",
     "js.cookie": ">0.0.1",
     "apiway": ">0.0.2"
   }

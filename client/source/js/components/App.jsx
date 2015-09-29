@@ -1,10 +1,10 @@
 import React               from "react";
-import { RouteHandler }    from "react-router";
 import { Resource, Store } from "apiway";
 import Auth                from "./Auth.jsx";
+import Chat                from "./Chat.jsx";
 
 
-class Secure extends React.Component {
+class App extends React.Component {
 
   constructor( props ){
     super( props );
@@ -14,8 +14,8 @@ class Secure extends React.Component {
   componentWillMount(){
     Store.CurrentUserResource = new Resource( "CurrentUser" );
     Store.CurrentUserResource
-      .onChange( ()=>{ if( !this.state.auth ) this.setState({ auth: true });  })
-      .onError(  ()=>{ if(  this.state.auth ) this.setState({ auth: false }); });
+      .onChange( ()=>{ this.setState({ auth: true });  })
+      .onError(  ()=>{ this.setState({ auth: false }); });
   }
 
   componentWillUnmount(){
@@ -24,10 +24,10 @@ class Secure extends React.Component {
   }
 
   render(){
-    return this.state.auth ? <RouteHandler /> : <Auth />;
+    return this.state.auth ? <Chat /> : <Auth />;
   }
 
 }
 
 
-export default Secure;
+export default App;

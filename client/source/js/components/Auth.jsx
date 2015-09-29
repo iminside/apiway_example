@@ -19,8 +19,7 @@ class Auth extends React.Component {
   onKeyUp( e ){
     if( e.keyCode !== 13) return;
     Api.query( "Users.auth_by_name", { name: e.target.value } )
-      .then(  ( token  )=>{ Cookie.set( "token", token, {live: 30} ); })
-      .catch( ( errors )=>{ this.setState({ errors });    });
+      .then( ( token  )=>{ Cookie.set( "token", token, {live: 30} ) }, ( errors )=>{ this.setState({ errors }) });
   }
 
   render(){
