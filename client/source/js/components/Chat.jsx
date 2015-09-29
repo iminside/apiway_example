@@ -20,9 +20,10 @@ class Chat extends React.Component {
   componentDidMount(){
     this.MessagesResource = new Resource( "Messages", { limit: 30 } );
     this.OnlineResource   = new Resource( "Online" );
-    this.MessagesResource.onChange( ()=>{ this.setState({ messages: this.MessagesResource.data }) } );
-    this.OnlineResource.onChange(   ()=>{ this.setState({ online:   this.OnlineResource.data   }) } );
-    setTimeout( function(){ window.scrollTo( 0, document.body.scrollHeight ); }, 70 );
+    this.MessagesResource
+      .onChange( ()=>{ this.setState({ messages: this.MessagesResource.data }) } )
+      .oneChange( ()=>{ window.scrollTo( 0, document.body.scrollHeight ); } );
+    this.OnlineResource.onChange( ()=>{ this.setState({ online: this.OnlineResource.data }) } );
     document.addEventListener( 'scroll', this.onScroll );
   }
 
